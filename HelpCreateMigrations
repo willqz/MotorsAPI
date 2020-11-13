@@ -1,0 +1,8 @@
+--atualizar o contexto
+Scaffold-DbContext "Server=DESKTOP-UV3QOQG\SQLEXPRESS;initial catalog=teste_webmotors;integrated security=True;MultipleActiveResultSets=True;Connect Timeout=15;App=EntityFramework&quot;" Microsoft.EntityFrameworkCore.SqlServer -o Entidades -f 
+
+---ADD
+
+optionsBuilder.UseSqlServer(ConnectionDB.RetornaUrlConnetion());
+optionsBuilder.UseLazyLoadingProxies();
+         
